@@ -84,7 +84,7 @@ if (nomor = 1) then
      gotoXY(50,30); writeln('             - Terima Kasih -                 ');
      gotoXY(50,30); writeln('   Telah Memesan di Restoran Bunda Grande     ');
     end
-   else if (pesanan > 5) then
+   else
     begin
      gotoXY(55,26); writeln('     KODE ANDA TIDAK VALID ');
      gotoXY(55,28); writeln('[ silahkan masukkan kode ulang ]');
@@ -210,7 +210,7 @@ else if (nomor = 3) then
 
   end
 
-  else if ((nomor>3) or (nomor<1)) then
+  else
   begin
    gotoXY(34,11); writeln('------------------------------------------------------------------------------');
    gotoXY(57,12); writeln(' __________________________');
