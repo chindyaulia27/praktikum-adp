@@ -9,11 +9,8 @@ const
 var
  nomor, pesanan, jumlah, harga :Longint;
 
-label
- tampilan_1;
 
 begin
-tampilan_1:
 
 clrscr;
 gotoXY(45,1); writeln(' -----------------------------------------');
@@ -88,8 +85,7 @@ if (nomor = 1) then
     begin
      gotoXY(55,26); writeln('     KODE ANDA TIDAK VALID ');
      gotoXY(55,28); writeln('[ silahkan masukkan kode ulang ]');
-     gotoXY(55,29); writeln('        [ tekan enter ]          '); readln;
-     goto tampilan_1;
+     gotoXY(55,29); writeln('        [ tekan enter ]          ');
     end;
   end
 
@@ -156,8 +152,7 @@ else if (nomor = 2) then
     begin
      gotoXY(55,26); writeln('     KODE ANDA TIDAK VALID      ');
      gotoXY(55,28); writeln('[ silahkan masukkan kode ulang ]');
-     gotoXY(55,29); writeln('        [ tekan enter ]         '); readln;
-     goto tampilan_1;
+     gotoXY(55,29); writeln('        [ tekan enter ]         ');
     end;
  end
 
@@ -204,8 +199,7 @@ else if (nomor = 3) then
     begin
      gotoXY(55,24); writeln('     KODE ANDA TIDAK VALID      ');
      gotoXY(55,26); writeln('[ silakan masukan kode ulang ]  ');
-     gotoXY(55,27); writeln('        [ tekan enter ]         '); readln;
-     goto tampilan_1;
+     gotoXY(55,27); writeln('        [ tekan enter ]         ');
     end
 
   end
@@ -217,8 +211,7 @@ else if (nomor = 3) then
    gotoXY(57,13); writeln('| Kode Pesanan Tidak Valid |');
    gotoXY(57,14); writeln('|__________________________|');
    gotoXY(55,16); writeln('[ silahkan masukkan kode ulang ]');
-   gotoXY(55,17); writeln('         [ tekan enter ]        ');readln;
-   goto tampilan_1;
+   gotoXY(55,17); writeln('         [ tekan enter ]        ');
   end;
   readln;
 end.
